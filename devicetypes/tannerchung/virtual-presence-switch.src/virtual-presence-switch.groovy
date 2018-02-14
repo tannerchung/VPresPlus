@@ -2,6 +2,8 @@
 //		1.1 Feb 14, 2018
 //			Forked from ajpri/VPrePlus
 //			Adding a nice icon to the main tile
+//			Changed colors to reflect the official SmartThings Color standards
+//			More about color standards here: http://bit.ly/ST-color
 //		1.0 May 20, 2016
 //			Initial Release
 
@@ -24,15 +26,15 @@ metadata {
 	// UI tile definitions
 	tiles {
 		standardTile("button", "device.switch", width: 2, height: 2, canChangeIcon: false,  canChangeBackground: true) {
-			state "off", label: 'Away', action: "switch.on", icon: "st.Kids.kid10", backgroundColor: "#ffffff", nextState: "on"
-			state "on", label: 'Present', action: "switch.off", icon: "st.Kids.kid10", backgroundColor: "#53a7c0", nextState: "off"
+			state "off", label: 'Away', action: "switch.on", icon: "st.presence.tile.not-present", backgroundColor: "#ffffff", nextState: "on"
+			state "on", label: 'Present', action: "switch.off", icon: "st.presence.tile.present", backgroundColor: "#00A0DC", nextState: "off"
 		}
 		standardTile("refresh", "device.switch", inactiveLabel: false, decoration: "flat") {
 			state "default", label:'', action:"refresh.refresh", icon:"st.secondary.refresh"
 		}
         standardTile("presence", "device.presence", width: 1, height: 1, canChangeBackground: true) {
-			state("present", labelIcon:"st.presence.tile.mobile-present", backgroundColor:"#53a7c0")
-			state("not present", labelIcon:"st.presence.tile.mobile-not-present", backgroundColor:"#ffffff")
+			state("present", labelIcon:"st.presence.tile.mobile-present", backgroundColor:"#00A0DC")
+			state("not present", labelIcon:"st.presence.tile.mobile-not-present", backgroundColor:"#cccccc")
 		}
 		main (["button", "presence"])
 		details(["button", "presence", "refresh"])
