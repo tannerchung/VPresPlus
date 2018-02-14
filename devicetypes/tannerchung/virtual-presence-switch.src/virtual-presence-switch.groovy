@@ -2,6 +2,7 @@
 //		1.1 Feb 14, 2018
 //			Forked from ajpri/VPrePlus
 //			Adding a nice icon to the main tile
+//			More about SmartThings icons here: http://bit.ly/ST-Icons
 //			Changed colors to reflect the official SmartThings Color standards
 //			More about color standards here: http://bit.ly/ST-color
 //		1.0 May 20, 2016
