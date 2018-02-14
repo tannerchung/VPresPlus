@@ -1,10 +1,13 @@
 //Release History
+//		1.1 Feb 14, 2018
+//			Forked from ajpri/VPrePlus
+//			Adding a nice icon to the main tile
 //		1.0 May 20, 2016
 //			Initial Release
 
 
 metadata {
-        definition (name: "Virtual Presence Plus", namespace: "ajpri", author: "Austin Pritchett") {
+        definition (name: "Virtual Presence Switch", namespace: "tannerchung", author: "Tanner Chung") {
         capability "Switch"
         capability "Refresh"
         capability "Presence Sensor"
